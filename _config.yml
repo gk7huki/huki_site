@@ -19,7 +19,7 @@ email: gk7huki@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Re-Volt, Open Source, Web...
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://gk7huki.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gk7huki
 github_username:  gk7huki
 
