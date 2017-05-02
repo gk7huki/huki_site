@@ -18,11 +18,11 @@ $ bundle exec jekyll serve
 ~~~
 That's it. I can already start saving my blog posts in the `_posts` folder. A newly generated site uses the `jekyll-minima` theme by default. I want my webpage to be *responsive*, gracefully reflowing across desktop, tablet and mobile screens. The `minima` theme was quite satisfactory in this regard.
 
-A typical Jekyll website is made up of a `YAML` front-matter, `Liquid` powered HTML layouts and `SCSS` stylesheets. Jekyll churns them together with your content written in `Markdown`, `Liquid` or even HTML. Functionality is further extended with plugins. With the Minima theme, `jekyll-feed` was enabled by default.
+A typical Jekyll website is made up of a `YAML` front-matter, `Liquid` powered HTML layouts and `SCSS` stylesheets. Jekyll churns them together with your content written in `Markdown`, `Textile` or even HTML. Functionality is further extended with plugins. With the Minima theme, `jekyll-feed` was enabled by default.
 
-On the surface, there is some native support for *categories* and *tags*, but it's still up to the user to collect together and display posts belonging to each category. This requires two parts: a plugin that generates each category page, and layout files that decide the actual content displayed on those pages.
+On the surface, there is some native support for *categories* and *tags*, but it's still up to the user to collect together and display posts belonging to each category. This requires two parts: a plugin that generates a page for each category, and layout files that decide the actual content displayed on those pages.
 
-The simplest option is to use `jekyll-archives`. In my case, I have it set up to follow the same permalink structure as the posts themselves.
+The simplest solution is to use `jekyll-archives`. In my case, I have it set up to follow the same permalink structure as the posts themselves.
 ~~~yaml
 jekyll-archives:
   enabled:
@@ -35,7 +35,7 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/:name/'
 ~~~
-With this, a post belonging to the `general` category may be found at `http://site/general/2017/05/01/blogging-with-jekyll.html`, and a page displaying all posts belonging to the `general` category can be found at `http://site/general/`. *Note that this only works neatly as long as your posts all have a single category!*
+With this, a post belonging to the `general` category may be `http://site/general/2017/05/01/blogging-with-jekyll.html`, and a page displaying all posts belonging to the `general` category can be found at `http://site/general/`. *Note that this only works neatly as long as your posts have a single category!*
 
 The layout files are placed in `_layouts/category.html` and `_layouts/tag.html`. Jekyll uses these layouts to generate a unique page for each category or tag. It's actually pretty straightforward.
 ~~~html{% raw %}
