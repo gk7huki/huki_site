@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <h1 class="page-heading">Categories</h1>
+  <ul class="post-list">
+    {% for cat in site.categories %}
+      <li><h2><a class="post-link" href="/{{ cat[0] }}">{{ cat[0] }}</a></h2></li>
+    {% endfor %}
+  </ul>
+
+  <h1 class="page-heading">Tags</h1>
+  {% for tag in site.tags %}
+    <a href="/tag/{{ tag[0] }}">{{ tag[0] }}</a>
+  {% endfor %}
+
+</div>
