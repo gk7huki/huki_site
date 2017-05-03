@@ -13,13 +13,19 @@
   flex-flow: row wrap;
 
   > li {
-    flex: 0 0 50%;
+    flex: 0 0 45%;
+    margin-right: 5%;
   }
 }
 
 @include media-query($on-palm) {
   .post-list {
     flex-flow: column wrap;
+
+    > li {
+      flex: 0 0 50%;
+      margin-right: 0;
+    }
   }
 }
 
