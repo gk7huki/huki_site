@@ -35,7 +35,7 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/:name/'
 ~~~
-With this, a post belonging to the `general` category may be `http://site/general/2017/05/01/blogging-with-jekyll.html`, and a page displaying all posts belonging to the `general` category can be found at `http://site/general/`. *Note that this only works neatly as long as your posts have a single category!*
+With this, a post belonging to the `general` category can be something like `http://site/general/2017/05/01/blogging-with-jekyll.html`, and a page displaying all posts belonging to this category is found at `http://site/general/`. *Note that this only works neatly as long as your posts have a single category!*
 
 The layout files are placed in `_layouts/category.html` and `_layouts/tag.html`. Jekyll uses these layouts to generate a unique page for each category or tag. It's actually pretty straightforward.
 ~~~html{% raw %}
@@ -108,7 +108,7 @@ echo "tags: " >> "$file"
 echo "---" >> "$file"
 ~~~
 
-As I spent several days setting up and tweaking my site, I came across several helpful and excellently designed Jekyll-powered blogs which really help demonstrate the customizing capability of this tool. If you're looking for a starting point or some inspiration for your Jekyll page, these sites might help you, as they did for me. :)
+As I spent several days setting up and tweaking my site, I came across various helpful and excellently designed Jekyll-powered blogs which really help demonstrate the customizing capability of this tool. If you're looking for a starting point or some inspiration for your Jekyll page, these sites might help you, as they did for me. :)
 
 - [charilepark.org - Tags in Jekyll](http://charliepark.org/tags-in-jekyll/)
 - [codinfox.github.io - Using Tags and Categories](http://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/)
